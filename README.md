@@ -30,7 +30,7 @@ Uygulamanın temel fonksiyonellikleri:
   dotnet build
   dotnet run
   ```
-- API endpoint'leri: `/api/tickets`, `/api/users` vb.
+- API endpoint: `/api/tickets`
 
 ### 2. Frontend (React)
 - Proje dizininde terminal açın:
