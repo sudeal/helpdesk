@@ -1,0 +1,84 @@
+.ticket-list-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 36px auto 24px auto;
+  padding: 36px 32px 28px 32px;
+}
+.ticket-list-container h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #231f20;
+  text-align: center;
+}
+.ticket-list-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.ticket-list-filters label {
+  font-weight: 500;
+  color: #444;
+  margin-right: 4px;
+}
+.ticket-list-filters select {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+}
+.ticket-list-filters button {
+  background: #ff6f3c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ticket-list-filters button:hover {
+  background: #ff914d;
+}
+.ticket-list-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.ticket-list-card {
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  border: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ticket-list-card:hover {
+  background: #fff3ed;
+  box-shadow: 0 2px 12px rgba(255,111,60,0.10);
+  border: 1.5px solid #ff6f3c;
+}
+.ticket-list-card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #231f20;
+}
+.ticket-list-card-meta {
+  font-size: 0.97rem;
+  color: #666;
+  display: flex;
+  gap: 18px;
+} 
