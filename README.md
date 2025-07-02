@@ -1,25 +1,29 @@
 # Help Desk (Yardım Masası) Uygulaması
 
-Bu proje, kurum içindeki destek taleplerinin dijital olarak kaydedilmesi, takibi ve yönetimi amacıyla geliştirilmiş bir Yardım Masası (Help Desk) uygulamasıdır.
+## 📌 Proje Konusu
+Bir Yardım Masası (Help Desk) uygulaması geliştirildi. Bu sistem, kurum içindeki destek taleplerinin dijital olarak kaydedilmesi, takibi ve yönetimi amacıyla kullanılmaktadır.
 
-## 🚩 ÖNEMLİ DURUM BİLGİSİ
-- **Şu anda uygulama sadece veritabanındaki mevcut destek taleplerini listeleyebilmektedir.**
-- **Yeni destek talebi oluşturma (ekleme) fonksiyonu backend bağlantı veya model uyumsuzluğu nedeniyle çalışmamaktadır.**
-- Backend bağlantısı ve POST işlemlerinde hata alınmaktadır. Sadece okuma (GET) işlemleri başarılıdır.
-
-## 🚀 Proje Özellikleri
-- **Destek Talebi (Ticket) İşlemleri:**
-  - Destek taleplerinin oluşturulması *(şu an devre dışı)*
-  - Tüm taleplerin listelenmesi *(çalışıyor)*
+## 🔧 Fonksiyonel Beklentiler
+Uygulamanın temel fonksiyonellikleri:
+- 🎫 **Ticket (Destek Talebi) İşlemleri**
+  - Destek taleplerinin oluşturulması
+  - Tüm taleplerin listelenmesi
   - Taleplerin detaylarının görüntülenmesi
-  - Durum ve öncelik gibi bilgilerle güncellenmesi *(geliştirilebilir)*
-- **Filtreleme & Sıralama:**
+  - Durum, öncelik gibi bilgilerle güncellenmesi
+- 🔍 **Filtreleme & Sıralama**
   - Taleplerin farklı kriterlere göre filtrelenebilmesi ve sıralanabilmesi
+
+## 📝 Proje Özeti
+- Kullanıcılar yeni destek talebi oluşturabilir.
+- Oluşturulan talepler backend'e başarıyla kaydedilir.
+- Tüm talepler listelenebilir ve detayları görüntülenebilir.
+- Talepler durum ve öncelik bilgileriyle güncellenebilir.
+- Listeleme ekranında talepler filtrelenip sıralanabilir.
 
 ## 🛠️ Kurulum ve Çalıştırma
 
 ### 1. Backend (ASP.NET Core + SQL Server)
-- Gerekli bağlantı ayarlarını `appsettings.json` dosyasında yapın.
+- `appsettings.json` dosyasında bağlantı ayarlarını yapın.
 - Migration ve veritabanı işlemlerini tamamlayın.
 - Azure App Service veya lokal olarak çalıştırabilirsiniz:
   ```sh
@@ -34,19 +38,16 @@ Bu proje, kurum içindeki destek taleplerinin dijital olarak kaydedilmesi, takib
   npm install
   npm start
   ```
-- `.env` dosyasında backend API adresini belirtin:
-  ```env
-  REACT_APP_API_URL=https://<senin-backend-adresin>/api
-  ```
-- Uygulama varsayılan olarak `http://localhost:3002`  portta çalışır.
+- Uygulama varsayılan olarak `http://localhost:3002` portunda çalışır.
 
 ## 📋 Kullanım
-- Ana sayfada yeni destek talebi oluşturabilir veya mevcut talepleri görüntüleyebilirsiniz.
-- **Not:** Şu anda sadece mevcut talepler görüntülenebilmektedir, yeni talep ekleme fonksiyonu çalışmamaktadır.
+- Ana sayfada yeni destek talebi oluşturabilirsiniz.
+- Oluşturulan talepler backend'e kaydedilir ve "View Tickets" ekranında listelenir.
 - Talepler filtrelenebilir ve sıralanabilir.
 - Her talebin detayına tıklayarak durum ve öncelik güncellenebilir.
 
 ## 📦 Kapsam ve Ekstra Açıklamalar
+- Kullanıcı yönetimi (login/rol bazlı) eklenebilir.
 - API ile tam entegre çalışır, veriler SQL Server'da saklanır.
 - Modern ve responsive arayüz.
 - Kodlar ve bileşenler kolayca geliştirilebilir ve özelleştirilebilir.
@@ -56,8 +57,5 @@ Bu proje, kurum içindeki destek taleplerinin dijital olarak kaydedilmesi, takib
 - CORS ve bağlantı ayarlarına dikkat edilmelidir.
 - Kodlar ve veritabanı şeması, kurumsal ihtiyaçlara göre genişletilebilir.
 
----
-
-> **Not:** Talep ekleme fonksiyonu ve backend bağlantısı ile ilgili sorunlar çözülmeden tam işlevsellik sağlanamaz. Sadece listeleme (okuma) fonksiyonu aktiftir.
 
 
