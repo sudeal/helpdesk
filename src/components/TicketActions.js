@@ -5,14 +5,14 @@ function TicketActions({ onCreate, onList }) {
   return (
     <div className="ticket-actions-grid">
       <div className="ticket-action-card">
-        <h3>Destek Talebi Oluştur</h3>
-        <p>Yeni bir destek talebi oluşturun ve kaydedin.</p>
-        <button onClick={onCreate}>Oluştur</button>
+        <h3>Create Ticket</h3>
+        <p>Create and save a new support ticket.</p>
+        <button onClick={onCreate}>Create</button>
       </div>
       <div className="ticket-action-card">
-        <h3>Talepleri Görüntüle</h3>
-        <p>Destek taleplerini listeleyin, filtreleyin ve sıralayın.</p>
-        <button onClick={onList}>Görüntüle</button>
+        <h3>View Tickets</h3>
+        <p>List, filter, and sort support tickets.</p>
+        <button onClick={onList}>View</button>
       </div>
     </div>
   );

@@ -64,7 +64,7 @@ function App() {
       setShowList(true);
       setSuccess('Destek talebi başarıyla oluşturuldu.');
     } catch (err) {
-      setError('Destek talebi eklenemedi.');
+      setError('Failed to create ticket.');
     }
     setLoading(false);
   };

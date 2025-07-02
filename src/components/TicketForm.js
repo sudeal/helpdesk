@@ -13,13 +13,10 @@ function TicketForm({ onAddTicket }) {
 
     const newTicket = {
       title,
-  description,
-  status,
-  priority,
-  createdAt: new Date().toISOString(),
-  updatedAt: new Date().toISOString(),
-  createdBy: 1 // test için sabit ID
-      
+      description,
+      status,
+      priority,
+      createdBy: 1
     };
 
     onAddTicket(newTicket);
@@ -32,17 +29,17 @@ function TicketForm({ onAddTicket }) {
 
   return (
     <div className="ticket-form-container">
-      <h2>Yeni Destek Talebi Oluştur</h2>
+      <h2>Create New Ticket</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Başlık"
+          placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
         />
         <textarea
-          placeholder="Açıklama"
+          placeholder="Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
@@ -58,7 +55,7 @@ function TicketForm({ onAddTicket }) {
           <option value="medium">medium</option>
           <option value="high">high</option>
         </select>
-        <button type="submit">Oluştur</button>
+        <button type="submit">Create</button>
       </form>
     </div>
   );

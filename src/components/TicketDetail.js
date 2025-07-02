@@ -12,23 +12,25 @@ function TicketDetail({ ticket, onUpdateTicket, onClose }) {
 
   return (
     <div style={{ border: '1px solid #ccc', padding: 16, marginTop: 16 }}>
-      <h3>{ticket.title}</h3>
-      <p><strong>Açıklama:</strong> {ticket.description}</p>
-      <p><strong>Oluşturulma:</strong> {new Date(ticket.createdAt).toLocaleString()}</p>
+      <h3>{ticket.title || ticket.Title}</h3>
+      <p><strong>Description:</strong> {ticket.description || ticket.Description}</p>
+      <p><strong>Created At:</strong> {new Date(ticket.createdAt || ticket.CreatedAt).toLocaleString()}</p>
       <div>
-        <label>Durum: </label>
-        <select value={ticket.status} onChange={handleStatusChange}>
-          <option value="Açık">Açık</option>
-          <option value="Kapalı">Kapalı</option>
+        <label>Status: </label>
+        <select value={ticket.status || ticket.Status} onChange={handleStatusChange}>
+          <option value="open">open</option>
+          <option value="in_progress">in_progress</option>
+          <option value="resolved">resolved</option>
+          <option value="closed">closed</option>
         </select>
-        <label>Öncelik: </label>
-        <select value={ticket.priority} onChange={handlePriorityChange}>
-          <option value="Düşük">Düşük</option>
-          <option value="Normal">Normal</option>
-          <option value="Yüksek">Yüksek</option>
+        <label>Priority: </label>
+        <select value={ticket.priority || ticket.Priority} onChange={handlePriorityChange}>
+          <option value="low">low</option>
+          <option value="medium">medium</option>
+          <option value="high">high</option>
         </select>
       </div>
-      <button onClick={onClose} style={{ marginTop: 8 }}>Kapat</button>
+      <button onClick={onClose} style={{ marginTop: 8 }}>Close</button>
     </div>
   );
 }
