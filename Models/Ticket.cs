@@ -25,5 +25,5 @@ public class Ticket
 
     [ForeignKey("CreatedBy")]
     [JsonIgnore] // Frontend'den gönderilmeyecek
-    public User CreatedByUser { get; set; } // navigation property
+    public User? CreatedByUser { get; set; }
 }
