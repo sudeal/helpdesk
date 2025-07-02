@@ -56,6 +56,7 @@ Uygulamanın temel fonksiyonellikleri:
 - Backend ve frontend ayrı dizinlerde çalışır.
 - CORS ve bağlantı ayarlarına dikkat edilmelidir.
 - Kodlar ve veritabanı şeması, kurumsal ihtiyaçlara göre genişletilebilir.
+- https://sudeal.github.io/helpdesk/ bu URL Microsoft Edge de açılmaktadır.
 
 
 
