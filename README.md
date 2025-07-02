@@ -39,6 +39,7 @@ Uygulamanın temel fonksiyonellikleri:
   npm start
   ```
 - Uygulama varsayılan olarak `http://localhost:3002` portunda çalışır.
+- Alternatif olarak Microsoft Edge de denenebilir,çalışır.
 
 ## 📋 Kullanım
 - Ana sayfada yeni destek talebi oluşturabilirsiniz.
@@ -56,7 +57,7 @@ Uygulamanın temel fonksiyonellikleri:
 - Backend ve frontend ayrı dizinlerde çalışır.
 - CORS ve bağlantı ayarlarına dikkat edilmelidir.
 - Kodlar ve veritabanı şeması, kurumsal ihtiyaçlara göre genişletilebilir.
-- https://sudeal.github.io/helpdesk/ bu URL Microsoft Edge de açılmaktadır.
+
 
 
 
